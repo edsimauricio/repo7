@@ -1,4 +1,4 @@
-<footer id="footer-content" class="container-fluid">
+<footer id="footer-content" class="container-fluid debug">
   <div class="container">
     <a href="/" target="_self" title="logo" rel="home" class="navbar-brand navbar-brand-bottom">
       {% include brand/logo.html %}
@@ -12,7 +12,7 @@
 
     <ul class="nav-menu nav justify-content-end">
       <li class="nav-item">
-        <a class="nav-link" target="_blank" href="repository_url" title="Repo">Repo</a>
+        <a class="nav-link" target="_blank" href="{{ site.github.repository_url }}" title="Repo">Repo</a>
       </li>
       <li class="nav-item">
           <a class="nav-link" target="_blank" href="{{ site.github.repository_url }}/issues/" title="Issues">Issues</a>
