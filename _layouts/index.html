@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  <head>
+    {% include common/header.html %}
+    {% seo %}
+  </head>
+
+  <body>
+
+    <section id="content-section" class="container-fluid">
+      <div id="content-layer" class="container">
+        {{ content }}
+      </div>
+    </section>
+
+    {% include common/footer.html %}
+  </body>
+</html>

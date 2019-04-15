@@ -1,0 +1,48 @@
+# ##
+# WARNING: absolute use space instead of tab to indent file.
+# ##
+
+# company or user name
+author: "XtrmAddons"
+
+# reference site
+url: "https://www.xtrmaddons.com"
+
+# generic title.
+title: XtrmAddons WordPress Widget To Top
+
+# generic description.
+description: XtrmAddons WordPress Widget To Top github documentation.
+
+# generic assets link root.
+assets: "http://github.assets.xtrmaddons.com"
+
+# "true" or "false" to show page header.
+show_page_header: false
+
+# "true" or "false" to indicate whether to provide a download URL
+show_downloads: true
+
+# show main navigation bar.
+show_navbar: true
+
+# navbar brand type: [icon|img]
+navbar_brand_type: "img"
+
+# navbar brand icon
+navbar_brand_icon: "glyphicon-home"
+
+# navbar brand image
+navbar_brand_img: "./assets/images/logo.png"
+
+# navbar brand title
+navbar_brand_title: "XtrmAddons"
+
+# navbar brand date start
+navbar_brand_date_start: "2007"
+
+# navbar brand date end
+navbar_brand_date_end: "2019"
+
+# Your Google Analytics tracking ID
+# google_analytics: [Your Google Analytics tracking ID]
