@@ -6,41 +6,39 @@
 
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
+    {% if site.show_navbar %}
+    <div id="navbar_wrap">
+      <nav id="navbar-main-top" class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="nav">
+          <!-- logo -->
+          {% if site.url %}
+          <a id="navbar-brand-logo" class="navbar-brand navbar-brand-logo" href="{{ site.url }}">
+          {% endif %}
+            {% if site.navbar_brand_type == "img" && site.navbar_brand_img %}
+            <img src="{{ site.navbar_brand_img }}" width="30" height="30" alt="www.xtrmaddons.com" class="navbar-logo" />
+            {% endif %}
+            {% if site.navbar_brand_type == "icon" && site.navbar_brand_icon %}
+            <span class="glyphicon {{ site.navbar_brand_icon }}"></span>
+            {% endif %}
+            {% if site.navbar_brand_title %}
+            <span class="navbar-logo-text">{{ site.navbar_brand_title }}</span>
+            {% endif %}
+          {% if site.url %}
+          </a>
+          {% endif %}
+          <!-- menu toggler -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link disabled" href="#">Disabled</a>
             </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
+          </div>
+        </div>
+      </nav>
+    </div>
+    {% endif %}
 
 
     <section id="content-section" class="container-fluid">
