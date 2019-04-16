@@ -36,7 +36,7 @@ navbar_brand_icon: "glyphicon-home"
 navbar_brand_img: "https://github.assets.xtrmaddons.com/assets/images/logo.png"
 
 # navbar brand title
-navbar_brand_title: "XtrmAddons"
+navbar_brand_title: ""
 
 # navbar brand date start
 navbar_brand_date_start: "2007"
