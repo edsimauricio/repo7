@@ -53,3 +53,7 @@ navbar_brand_date_end: "2019"
 
 # Your Google Analytics tracking ID
 google_analytics: "UA-107731670-1"
+
+google_adsense_client: "ca-pub-1175089473544116"
+google_adsense_slot: "6837462325"
+google_adsense_format: "auto"

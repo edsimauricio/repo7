@@ -10,11 +10,15 @@
       {% include common/navbar.html %}
     </header>
 
+    {% include extra/google-adsense.html %}
+
     <section id="content-section" class="container-fluid">
       <div id="content-layer" class="container">
         {{ content }}
       </div>
     </section>
+
+    {% include extra/google-adsense.html %}
 
     {% include common/footer.html %}
     {% include extra/bootstrap-js.html %}
