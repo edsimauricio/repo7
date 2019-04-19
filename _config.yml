@@ -21,8 +21,6 @@ assets: "https://github.assets.xtrmaddons.com"
 # see : https://jekyllrb.com/docs/collections/
 collections_dir: "docs"
 
-
-
 # "true" or "false" to show page header.
 show_page_header: false
 
@@ -45,9 +43,10 @@ navbar_brand_img: "https://github.assets.xtrmaddons.com/assets/images/logo.png"
 navbar_brand_title: ""
 
 # navbar brand
-navbar_brand:
-  date_start: "2007"
-  date_end: "2019"
+brand:
+  copyright:
+    date_start: "2007"
+    date_end: "2019"
 
 # navbar brand date end
 # avbar_brand_date_end: "2019"
