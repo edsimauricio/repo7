@@ -44,13 +44,13 @@ navbar_brand_img: "https://github.assets.xtrmaddons.com/assets/images/logo.png"
 # navbar brand title
 navbar_brand_title: ""
 
-# navbar brand date start
+# navbar brand
 navbar_brand:
   date_start: "2007"
   date_end: "2019"
 
 # navbar brand date end
-navbar_brand_date_end: "2019"
+n# avbar_brand_date_end: "2019"
 
 # Your Google Analytics tracking ID
 google_analytics: "UA-107731670-1"
