@@ -1,0 +1,16 @@
+h1 { font-size: 1.75rem; }
+      h2 { font-size: 1.5rem; }
+      h3 { font-size: 1.3rem; }
+      h4 { font-size: 1.15rem; }
+      h5 { font-size: 1.1rem; }
+      h6 { font-size: 1rem; }
+      
+      #content-submenu { background: #F2F2F2; padding: 0.5rem; padding-top:0; }
+      #content-submenu .nav-submenu { background:#355C7D; }
+      #content-submenu a { border: 0; color: #FFF; }
+      #content-submenu .container { padding:0; }
+      .breadcrumb > li + li::before {
+        padding: 0 5px;
+        color: #FFF;
+        content: ">";
+      }
