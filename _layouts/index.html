@@ -10,12 +10,14 @@
       {% include common/navbar.html %}
     </header>
 
+    {% if page.breadcrumb %}
     <div class="container-fluid container-breadcrumb">
       <div class="container">
         {% include common/breadcrumb.html %}
       </div>
     </div>
-
+    {% endif %}
+    
     {% include extra/google-adsense.html %}
 
     <section id="content-section" class="container-fluid">
