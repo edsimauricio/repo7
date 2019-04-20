@@ -5,25 +5,16 @@
         <span class="divider icon-location"></span>
       </li>
 
+      {% for link in page.breadcrumb %}
       <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem" class="active">
-        <a itemprop="name" href="{{ page.breadcrumb.link1.href }}">{{ page.breadcrumb.link1.name }}</a>
-        <meta itemprop="position" content="1">
+        {% if link.href %}
+        <a itemprop="name" href="{{ link.href }}">{{ link.name }}</a>
+        {% else %}
+        <span itemprop="name">{{ link.name }}</span>
+        {% endif %}
+        <meta itemprop="position" content="{{ forloop.index }}">
       </li>
-
-      <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem" class="active">
-        <a itemprop="name" href="{{ page.breadcrumb.link2.href }}">{{ page.breadcrumb.link2.name }}</a>
-        <meta itemprop="position" content="2">
-      </li>
-
-      <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem" class="active">
-        <a itemprop="name" href="{{ page.breadcrumb.link3.href }}">{{ page.breadcrumb.link3.name }}</a>
-        <meta itemprop="position" content="3">
-      </li>
-
-      <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem" class="active">
-        <span itemprop="name">{{ page.breadcrumb.link4.name }}</span>
-        <meta itemprop="position" content="4">
-      </li>
+      {% endfor %}
     </ul>
   </div>
 </nav>
