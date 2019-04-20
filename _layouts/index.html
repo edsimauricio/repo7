@@ -13,13 +13,7 @@
     {% if page.submenu %}
     <div id="content-submenu" class="container-fluid container-submenu">
       <div class="container">
-        <ul class="nav-menu nav justify-content-center">
-          {% for link in page.submenu %}
-          <li class="nav-item">
-            <a class="nav-link" target="_blank" href="{{ link.href }}" title="{{ link.name }}">{{ link.name }}</a>
-          </li>
-          {% endfor %}
-        </ul>
+      {% include common/submenu.html %}
       </div>
     </div>
     {% endif %}
