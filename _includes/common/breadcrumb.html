@@ -1,0 +1,24 @@
+<nav class="moduletable ">
+  <div aria-label="" role="navigation">
+    <ul itemscope="" itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
+      <li class="active">
+        <span class="divider icon-location"></span>
+      </li>
+
+      <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem" class="active">
+        <a itemprop="name" href="{{ page.breadcrumb.link1.url }}">{{ page.breadcrumb.link1.name }}</a>
+        <meta itemprop="position" content="1">
+      </li>
+
+      <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem" class="active">
+        <a itemprop="name" href="{{ page.breadcrumb.link2.url }}">{{ page.breadcrumb.link2.name }}</a>
+        <meta itemprop="position" content="1">
+      </li>
+
+      <li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem" class="active">
+        <span itemprop="name">{{ page.breadcrumb.link3.name }}</span>
+        <meta itemprop="position" content="3">
+      </li>
+    </ul>
+  </div>
+</nav>
