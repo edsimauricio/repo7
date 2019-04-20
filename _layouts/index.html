@@ -10,18 +10,18 @@
       {% include common/navbar.html %}
     </header>
 
-    {% if page.submenu %}
-    <div id="content-submenu" class="container-fluid container-submenu">
-      <div class="container">
-      {% include common/submenu.html %}
-      </div>
-    </div>
-    {% endif %}
-
     {% if page.breadcrumb %}
     <div class="container-fluid container-breadcrumb">
       <div class="container">
         {% include common/breadcrumb.html %}
+      </div>
+    </div>
+    {% endif %}
+
+    {% if page.submenu %}
+    <div id="content-submenu" class="container-fluid container-submenu">
+      <div class="container">
+      {% include common/submenu.html %}
       </div>
     </div>
     {% endif %}
