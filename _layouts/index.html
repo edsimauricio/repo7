@@ -11,7 +11,7 @@
     </header>
 
     {% if page.submenu %}
-    <footer id="content-submenu" class="container-fluid container-submenu">
+    <div id="content-submenu" class="container-fluid container-submenu">
       <div class="container">
         <ul class="nav-menu nav justify-content-center">
           {% for link in page.submenu %}
@@ -21,7 +21,7 @@
           {% endfor %}
         </ul>
       </div>
-    </footer>
+    </div>
     {% endif %}
 
     {% if page.breadcrumb %}
