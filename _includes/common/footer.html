@@ -1,12 +1,13 @@
-<footer id="footer-content" class="container-fluid">
+<footer id="content-footer" class="container-fluid">
   <div class="container">
     <a href="/" target="_self" title="logo" rel="home" class="navbar-brand navbar-brand-bottom">
-      {% include brand/logo.svg %}
+      <img src="{{ site.assets }}/assets/images/logo.svg" alt="logo" />
     </a>
 
     <div class="nav-copyright">
         © {{ site.author }} {{ page.brand.copyright.date_start }} - {{ site.brand.copyright.date_end }}<br />
-        {{ site.title | default: site.github.repository_name }} repository maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a><br />
+        {{ site.title | default: site.github.repository_name }} repository maintained by 
+        <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a><br />
         Developed using <a href="https://jekyllrb.com" target="_blank">Jekyll</a> exclusively for {{ site.author }}.
     </div>
 
