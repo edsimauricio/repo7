@@ -26,7 +26,9 @@
     </div>
     {% endif %}
     
+    {% if page.adsense.top %}
     {% include extra/google-adsense.html %}
+    {% endif %}
 
     <section id="content-section" class="container-fluid">
       <div id="content-layer" class="container">
@@ -39,7 +41,9 @@
       {% endif %}
     </section>
 
+    {% if page.adsense.bottom %}
     {% include extra/google-adsense.html %}
+    {% endif %}
 
     {% include common/footer.html %}
     {% include extra/bootstrap-js.html %}
