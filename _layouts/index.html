@@ -32,6 +32,10 @@
       <div id="content-layer" class="container">
         {{ content }}
       </div>
+
+      {% if page.comments %}
+      {% include extra/disqus.html %}
+      {% endif %}
     </section>
 
     {% include extra/google-adsense.html %}
@@ -39,5 +43,8 @@
     {% include common/footer.html %}
     {% include extra/bootstrap-js.html %}
     {% include extra/google-analytics.html %}
+    {% if page.comments %}
+    <script id="dsq-count-scr" src="//xtrmaddons.disqus.com/count.js" async></script>
+    {% endif %}
   </body>
 </html>
