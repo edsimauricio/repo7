@@ -33,12 +33,12 @@
     <section id="content-section" class="container-fluid">
       <div id="content-layer" class="container">
         {{ content }}
-      </div>
 
-      {% if page.comments %}
-      Comments :
-      {% include extra/disqus.html %}
-      {% endif %}
+        {% if page.comments %}
+        Comments :
+        {% include extra/disqus.html %}
+        {% endif %}
+      </div>
     </section>
 
     {% if page.adsense.bottom %}
