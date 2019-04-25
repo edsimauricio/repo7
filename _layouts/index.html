@@ -34,8 +34,9 @@
       <div id="content-layer" class="container">
         {{ content }}
 
+        <hr class="clearfix" />
+
         {% if page.comments %}
-        Comments :
         {% include extra/disqus.html %}
         {% endif %}
       </div>
