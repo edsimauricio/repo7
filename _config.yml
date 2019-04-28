@@ -22,15 +22,6 @@ assets: "https://github.assets.xtrmaddons.com"
 # see : https://jekyllrb.com/docs/collections/
 collections_dir: "docs"
 
-# "true" or "false" to show page header.
-show_page_header: false
-
-# "true" or "false" to indicate whether to provide a download URL
-show_downloads: true
-
-# show main navigation bar.
-show_navbar: true
-
 # navbar brand type: [icon|img]
 navbar_brand_type: "img"
 
