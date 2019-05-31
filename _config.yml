@@ -2,50 +2,46 @@
 # WARNING: absolute use space instead of tab to indent file.
 # ##
 
+# reference site
+url: "https://www.xtrmaddons.com/"
+cname: "https://github.wp-widget-to-top.xtrmaddons.com/"
+url_repo: "https://github.com/shim-sao/wordpress-widget-to-top"
+
 # company or user name
 author: "XtrmAddons"
 
-# reference site
-url: "https://www.xtrmaddons.com"
-git_url: "https://github.wp-widget-to-top.xtrmaddons.com"
-
 # generic title.
-title: XtrmAddons WordPress Widget To Top
+title: XtrmAddons WordPress Widget ToTop
 
 # generic description.
 description: XtrmAddons WordPress Widget To Top github documentation.
 
-# generic assets link root.
-assets: "https://github.assets.xtrmaddons.com"
+# enable preloader
+preloader: default
 
-# pages collection
-# see : https://jekyllrb.com/docs/collections/
-collections_dir: "docs"
+# Generic assets links.
+assets:
+  css: "https://github.assets.xtrmaddons.com/assets/css"
+  img: "https://github.assets.xtrmaddons.com/assets/images/"
+  js: "https://github.assets.xtrmaddons.com/assets/js"
 
-# navbar brand type: [icon|img]
-navbar_brand_type: "img"
-
-# navbar brand icon
-navbar_brand_icon: "glyphicon-home"
-
-# navbar brand image
-navbar_brand_img: "https://github.assets.xtrmaddons.com/assets/images/logo.png"
-
-# navbar brand title
-navbar_brand_title: ""
+# navbar
+navbar:
+  brand:
+    icon: "glyphicon-home"
+    img: "logo-name.svg"
+    title: ""
+    type: "img"
 
 # navbar brand
-brand:
-  copyright:
-    date_start: "2007"
-    date_end: "2019"
+copyright:
+  date_start: "2012"
+  date_end: "2019"
 
-# navbar brand date end
-# avbar_brand_date_end: "2019"
-
-# Your Google Analytics tracking ID
-google_analytics: "UA-107731670-1"
-
-google_adsense_client: "ca-pub-1175089473544116"
-google_adsense_slot: "6837462325"
-google_adsense_format: "auto"
+# Google Analytics tracking ID
+google:
+  analytics: "UA-107731670-1"
+  adsense:
+    client: "ca-pub-1175089473544116"
+    slot: "6837462325"
+    format: "auto"
